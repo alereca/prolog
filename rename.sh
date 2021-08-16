@@ -1,3 +1,4 @@
+# Rename files indexed by a number.
 # Warning: this script is not suitable for filenames that contain spaces
 # Because of command substitution word splitting
 FILE_PREFIX=$1

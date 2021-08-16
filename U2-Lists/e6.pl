@@ -4,10 +4,10 @@
 diferencia_primer_ultimo(Lista, Diff) :- obtener_primero(Lista, Primero), obtener_ultimo(Lista, Ultimo)
                                 , Diff is Primero - Ultimo.
 
-obtener_primero([Head|_], Elemento) :- Elemento is Head.
+obtener_primero([Head|_], Head).
 obtener_ultimo([_|Tail], Elemento) 
     :- Tail \= [], obtener_ultimo(Tail, Elemento).
-obtener_ultimo([Head|[]], Elemento) :- Elemento is Head.                                  
+obtener_ultimo([Head|[]], Head).                                  
 
 /*
     ?- diferencia_primer_ultimo([1,2,3], D).
