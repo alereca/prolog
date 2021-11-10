@@ -1,0 +1,8 @@
+:- dynamic gastos/4.
+
+gastos([ale, juana, lidia], luz, 102021, 15000).
+gastos([ale, marta], luz, 102021, 1010).
+gastos([marta, luana], agua, 12021, 110).
+gastos([ahmed, juan], luz, 102021, 457).
+gastos([marta, carlos, ana], agua, 112021, 4000).
+

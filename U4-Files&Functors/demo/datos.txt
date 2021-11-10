@@ -1,0 +1,4 @@
+:- dynamic padres/3.
+
+padres(aswqw, wqwqe, saqwq).
+

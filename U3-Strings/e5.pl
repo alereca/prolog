@@ -3,13 +3,6 @@
     tomando como divisor el espacio. 
 */
 
-/*
-to_word_list('', []).
-to_word_list(Cadena, [Head| Tail]) :- not(sub_atom(Cadena, _, _, _, ' ')), sub_atom(Cadena, 0, _, 0, Head), to_word_list('', Tail).
-to_word_list(Cadena, [Head| Tail]) :- sub_atom(Cadena, C, _, _, ' '), sub_atom(Cadena, 0, C, _, Head), NextWordIndex is C + 1
-                                    ,  sub_atom(Cadena, NextWordIndex, _, 0, CadenaRestante), to_word_list(CadenaRestante, Tail).
-*/
-
 to_word_list(Cadena, [Head| Tail]) :- sub_atom(Cadena, C, _, _, ' '), sub_atom(Cadena, 0, C, _, Head), NextWordIndex is C + 1
                                     ,  sub_atom(Cadena, NextWordIndex, _, 0, CadenaRestante), to_word_list(CadenaRestante, Tail).
 to_word_list(Word, [Word]) :- Word \= ''.

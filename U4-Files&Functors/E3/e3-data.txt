@@ -1,0 +1,21 @@
+:- dynamic alimentacion/3.
+
+alimentacion(koala, bambu, '5 kg').
+alimentacion(elefante, mani, '20 kg').
+
+:- dynamic bebida/3.
+
+bebida(koala, agua, '10 lt').
+bebida(elefante, agua, '100 lt').
+bebida(perro, agua, '20 lts').
+
+:- dynamic reproduccion/3.
+
+reproduccion(koala, primavera, '36 dias').
+reproduccion(elefante, verano, '22 meses').
+
+:- dynamic horas_suenio/2.
+
+horas_suenio(koala, 18).
+horas_suenio(elefante, 2).
+

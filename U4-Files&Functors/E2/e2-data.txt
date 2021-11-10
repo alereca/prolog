@@ -1,0 +1,10 @@
+:- dynamic personas/2.
+
+personas(1, ale).
+personas(2, jaime).
+personas(3, hernan).
+personas(5, carla).
+personas(6, joaquin).
+personas(7, juan).
+personas(8, agustin).
+
